@@ -1,0 +1,25 @@
+#!bin/bash
+clear
+
+echo "  [+]===================[+] "
+echo "  Coder By : Tegar Store "
+echo "  Batas Telp : 3 "
+echo "  Tidak Bisa Pake 08/+62 "
+echo "  Example : 885876xxxxx "
+echo "  [+]===================[+] "
+figlet TELp | lolcat
+echo '
+[1], Prank
+[2], Exit tools
+'
+echo
+read -p "Masukan Pilihan Anda : " pil
+if [[ $pil == 1 ]]; then
+read -p "Masukan No Target : " nomor
+link="https://id.jagreward.com/member/verify-mobile/$nomor"
+curl -s $link
+else
+echo 'Trima Kasih Udah Pake Tools Gue'
+exit
+fi
+echo
